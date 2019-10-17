@@ -13,9 +13,10 @@ public class App {
 	}
 
 	@Bean
-	public void generateReport(final EmployeeReportService employeeReportService) {
+	public String generateReport(final EmployeeReportService employeeReportService) {
 
 		employeeReportService.generateReport();
 
+		return "reportGenerated";
 	}
 }

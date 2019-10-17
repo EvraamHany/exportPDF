@@ -161,7 +161,6 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement x="465" y="10" width="84" height="20" uuid="bb10dbe1-0a4f-4722-9953-c163b63cf979"/>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
-
 			<textField pattern="EEEEE dd MMMMM yyyy">
 				<reportElement x="465" y="30" width="84" height="20" uuid="3836ce65-eca3-4cad-a6de-b1818def0a2b"/>
 				<textFieldExpression><![CDATA["INV0001"]]></textFieldExpression>
@@ -211,7 +210,7 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Column header" positionType="Float" x="92" y="0" width="92" height="20" forecolor="#000000" uuid="b6f2d905-bbb5-4540-9d31-318324bb1383">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a52e7456-80c4-4f40-9531-da460109b3c3"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ordertypename]]></text>
@@ -220,16 +219,16 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Column header" positionType="Float" x="184" y="0" width="92" height="20" forecolor="#000000" uuid="eb58f588-6e05-4660-a2c3-0bd84200047e">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9b67f83-1e6f-4085-93c0-8b4ac9d7872e"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[vendorname]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" positionType="Float" x="276" y="0" width="92" height="20" forecolor="#000000" uuid="19995938-8a21-4722-84da-3b254cc03eea">
+				<reportElement style="Column header" positionType="Float" x="276" y="0" width="133" height="20" forecolor="#000000" uuid="19995938-8a21-4722-84da-3b254cc03eea">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c20c06b-77f4-4c17-9560-258fb1f1e7f8"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[purchaseunitname]]></text>
@@ -238,7 +237,7 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Column header" positionType="Float" x="368" y="0" width="92" height="20" forecolor="#000000" uuid="72782ff5-0993-4e3a-a852-8342a233155f">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3f883ba5-aecc-446d-98b6-98e6bbf68286"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[currencyiso]]></text>
@@ -247,8 +246,8 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Column header" positionType="Float" x="460" y="0" width="92" height="20" forecolor="#000000" uuid="fc7eee73-fde4-46ae-9707-4aaeeeabc754">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4db62a4-28f3-4f55-9304-fe6df4a7bc18"/>
 				</reportElement>
-				<textElement>
-					<font fontName="Arial" size="12" isBold="true"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[currencyname]]></text>
 			</staticText>
@@ -269,7 +268,7 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Detail" positionType="Float" x="92" y="0" width="92" height="20" uuid="7ae47a85-0b2b-4f91-9674-2f1bea8b7987">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a52e7456-80c4-4f40-9531-da460109b3c3"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{ordertypename}]]></textFieldExpression>
@@ -278,16 +277,16 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Detail" positionType="Float" x="184" y="0" width="92" height="20" uuid="3f9f9feb-2dd8-4763-9edf-fa58a0e55c24">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9b67f83-1e6f-4085-93c0-8b4ac9d7872e"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{vendorname}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="Detail" positionType="Float" x="276" y="0" width="92" height="20" uuid="5d791308-2994-4573-beff-32c4ab9a8837">
+				<reportElement style="Detail" positionType="Float" x="276" y="0" width="133" height="20" uuid="5d791308-2994-4573-beff-32c4ab9a8837">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c20c06b-77f4-4c17-9560-258fb1f1e7f8"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{purchaseunitname}]]></textFieldExpression>
@@ -296,7 +295,7 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Detail" positionType="Float" x="368" y="0" width="92" height="20" uuid="a3206732-73b9-4e96-8bb4-04d454a6052b">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3f883ba5-aecc-446d-98b6-98e6bbf68286"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{currencyiso}]]></textFieldExpression>
@@ -305,7 +304,7 @@ from  dobpurchaseordergeneralmodel]]>
 				<reportElement style="Detail" positionType="Float" x="460" y="0" width="92" height="20" uuid="308a07fd-6935-4fd8-ab63-e7a409629cff">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b4db62a4-28f3-4f55-9304-fe6df4a7bc18"/>
 				</reportElement>
-				<textElement>
+				<textElement textAlignment="Right">
 					<font fontName="Arial" size="12" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{currencyname}]]></textFieldExpression>

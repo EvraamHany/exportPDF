@@ -32,14 +32,14 @@ public class EmployeeReportService {
 			JasperReport jasperReport = JasperCompileManager.compileReport(reportPath + "/employee-rpt.jrxml");
 
 			Map<String, Object> parameters = new HashMap<>();
-			parameters.put("local", "en");
-			parameters.put(JRXlsAbstractExporter.PROPERTY_SHEET_DIRECTION, "RTL");
+			parameters.put("local", "ar");
+//			parameters.put(JRXlsAbstractExporter.PROPERTY_SHEET_DIRECTION, "RTL");
 
 			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, conn);
 			jasperPrint.addStyle(prepareStyle());
 
-//			JasperExportManager.exportReportToPdfFile(jasperPrint, reportPath + "\\Emp-Rpt.pdf");
-			JasperExportManager.exportReportToHtmlFile(jasperPrint, reportPath + "\\Emp-Rpt.html");
+			JasperExportManager.exportReportToPdfFile(jasperPrint, reportPath + "\\Emp-Rpt.pdf");
+//			JasperExportManager.exportReportToHtmlFile(jasperPrint, reportPath + "\\Emp-Rpt.html");
 
 		} catch (Exception e) {
 			e.printStackTrace();
